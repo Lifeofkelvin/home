@@ -1,0 +1,274 @@
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+.close-btn {
+    display: none;
+}
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.menu {
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+    font-weight: 400;
+}
+li:hover {
+    color: var(--Soft-red);
+}
+.flex-hero {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-hero img {
+    max-width: 100%;
+}
+.image1 {
+    display: block;
+}
+.image2 {
+    display: none;
+}
+.hero-side {
+    margin-left: 20px;
+    background: var(--Very-dark-blue);
+    color: white;
+    padding: 15px;
+    line-height: 24px;
+}
+.hero-side p {
+    color: var(--Grayish-blue);
+}
+.hero-side h3 {
+    color: var(--Soft-orange);
+    font-size: 30px;
+}
+.hero-side hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: var(--Grayish-blue);
+    outline: none;
+}
+.hero-text {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-p {
+    width: 50%;
+}
+.flex-heading h2 {
+    font-size: 45px;
+    font-weight: 900;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 14px 25px;
+    width: 200px;
+    color: #fff;
+    background: var(--Very-dark-blue);
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+button:hover {
+    background: var(--Soft-red);
+}
+
+section {
+    display: flex;
+    margin-top: 20px;
+}
+
+section img {
+    width: 100px;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+ .section-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+ }
+.special-number {
+    color: grey;
+    opacity: 0.5;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.section-text h4 {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.section-text h4:hover {
+    color: var(--Soft-red);
+}
+
+.section-text p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.lock {
+    overflow: hidden;
+}
+.dropdown {
+    display: flex;
+}
+
+@media(min-width: 751px) {
+    .dropdown {
+        display: flex;
+    }
+}
+
+@media (max-width: 750px) {
+    .close-btn {
+        display: block;
+    }
+    .image1 {
+        display: none;
+    }
+    .image2 {
+        display: block;
+        width: 100%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .dropdown {
+        display: none;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 95%;
+    }
+    nav a img {
+        width: 60px;
+        margin-left: 30px;
+    }
+    .flex-hero {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    section .cards {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .hero-text {
+        display: block;
+    }
+    .hero-side {
+        margin: 0;
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    section .card-down {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .flex-heading h2 {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        
+    }
+    .break {
+        display: none;
+    }
+    button {
+        margin-bottom: 10px;
+    }
+    .section-text {
+        margin-left: 20px;
+    }
+    .nav-links {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        position: absolute;
+        right: 5%;
+        top: 48%;
+        opacity: 1;
+        background: #fff;
+        box-shadow: 0 0 20px 0;
+    }
+    .menu {
+        display: block;
+        object-fit: contain;
+        /* margin-right: 40px; */
+    }
+    .nav-link {
+        margin: 20px;
+    }
+    .close-btn {
+        width: 20px;
+    }
+    .dropdown /* .show */{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .cards {
+        display: block;
+        margin-left: 40px;
+    }
+
+}
